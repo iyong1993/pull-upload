@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="index.css">-->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="wrap">
+        <div class="wrap-list J_wrap-list" data-ifupdate="true">
+            <ul class="wrap-list-ul J_scroll">
+
+            </ul>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+<script id="J_tpl" type="text/html">
+    {{each result}}
+    <li>{{$value.famous_name}}</li>
+    {{/each}}
+</script>
+<script type="text/javascript" src="assets/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/template-web.js"></script>
+<script type="text/javascript" src="slideUpdate.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</html>
